@@ -76,9 +76,6 @@
     "type": "git",
     "url": "https://github.com/codewithvicent/codewithvicent-ui-library.git"
   },
-  "publishConfig": {
-    "access": "restricted"
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
