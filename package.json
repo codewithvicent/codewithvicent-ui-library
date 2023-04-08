@@ -19,8 +19,8 @@
     "commit": "git-cz",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook": "storybook dev",
+    "build-storybook": "storybook build",
     "semantic-release": "semantic-release"
   },
   "peerDependencies": {
@@ -52,12 +52,18 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.21.4",
+    "@chakra-ui/storybook-addon": "^4.0.16",
     "@size-limit/preset-small-lib": "^8.2.4",
     "@storybook/addon-essentials": "^7.0.2",
-    "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-links": "^7.0.2",
+    "@storybook/addon-mdx-gfm": "^7.0.2",
     "@storybook/addons": "^7.0.2",
+    "@storybook/cli": "^7.0.2",
     "@storybook/react": "^7.0.2",
+    "@storybook/react-webpack5": "^7.0.2",
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
     "babel-loader": "^9.1.2",
@@ -68,6 +74,7 @@
     "react-is": "^18.2.0",
     "semantic-release": "^21.0.1",
     "size-limit": "^8.2.4",
+    "storybook": "^7.0.2",
     "tsdx": "^0.14.1",
     "tslib": "^2.5.0",
     "typescript": "^3.9.10"
@@ -80,5 +87,10 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.5.5",
+    "@emotion/react": "^11.10.6",
+    "framer-motion": "^10.11.2"
   }
 }
